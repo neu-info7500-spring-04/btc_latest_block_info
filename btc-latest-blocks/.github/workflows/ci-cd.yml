@@ -20,11 +20,13 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
+      working-directory: ./btc-latest-blocks
     - name: Run tests
       run: npm test
+      working-directory: ./btc-latest-blocks
 
     - name: Build
       run: npm run build
+      working-directory: ./btc-latest-blocks
 
     # Add additional steps for deployment if needed
